@@ -1,3 +1,5 @@
+Weather-API-App
+A Mechatronics Hub NG Api project, For smart prediction and weather monitoring
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
