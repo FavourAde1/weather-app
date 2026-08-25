@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  background: #020617;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background: #020617;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  position: relative;
+  background:
+    radial-gradient(circle at top, rgba(14, 165, 233, 0.28), transparent 40%),
+    linear-gradient(135deg, #020617 0%, #111827 42%, #0f172a 100%);
+}
+
+body::before {
+  /* subtle centered blended logo */
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('/assets/mechatronics-hub-ng-logo.png');
+  background-repeat: no-repeat;
+  background-position: center 55%;
+  background-size: 60vmin;
+  opacity: 0.08;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  z-index: 0;
+}
+
+body::after {
+  /* gentle dark overlay to improve contrast */
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.22);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input {
+  font: inherit;
+}
